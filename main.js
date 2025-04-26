@@ -57,6 +57,8 @@ function animate(timeMs)
         ctx.fillRect(p.x*cellSize + 10 ,p.y*cellSize + 10,cellSize,cellSize);
     } );
 
+    info(`${(e.width-20)/cellSize}  ts: ${ts}   `);
+
     lastTimeMs= timeMs;
     requestAnimationFrame(animate);
 }
